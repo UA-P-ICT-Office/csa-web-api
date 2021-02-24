@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AcademicsModelStoreContainer" CdmEntityContainer="AcademicsEntities">
+    <EntitySetMapping Name="STUDENTs">
+      <EntityTypeMapping TypeName="AcademicsModel.STUDENT">
+        <MappingFragment StoreEntitySet="STUDENT">
+          <ScalarProperty Name="FNSTUDENTID" ColumnName="FNSTUDENTID" />
+          <ScalarProperty Name="FCSTUDCODE" ColumnName="FCSTUDCODE" />
+          <ScalarProperty Name="FCSTUDTYPE" ColumnName="FCSTUDTYPE" />
+          <ScalarProperty Name="FCLASTNAME" ColumnName="FCLASTNAME" />
+          <ScalarProperty Name="FCFIRSTNAME" ColumnName="FCFIRSTNAME" />
+          <ScalarProperty Name="FCMIDNAME" ColumnName="FCMIDNAME" />
+          <ScalarProperty Name="FCSEX" ColumnName="FCSEX" />
+          <ScalarProperty Name="FNPROGRAMID" ColumnName="FNPROGRAMID" />
+          <ScalarProperty Name="FNBATCHYEAR" ColumnName="FNBATCHYEAR" />
+          <ScalarProperty Name="FNSPCLID" ColumnName="FNSPCLID" />
+          <ScalarProperty Name="FCNICKNAME" ColumnName="FCNICKNAME" />
+          <ScalarProperty Name="FCCITIZENSHIP" ColumnName="FCCITIZENSHIP" />
+          <ScalarProperty Name="FCCIVILSTATUS" ColumnName="FCCIVILSTATUS" />
+          <ScalarProperty Name="FCBEGSTATUS" ColumnName="FCBEGSTATUS" />
+          <ScalarProperty Name="FCACADSTATUS" ColumnName="FCACADSTATUS" />
+          <ScalarProperty Name="FDBIRTHDATE" ColumnName="FDBIRTHDATE" />
+          <ScalarProperty Name="FCBIRTHPLACE" ColumnName="FCBIRTHPLACE" />
+          <ScalarProperty Name="FCRELIGION" ColumnName="FCRELIGION" />
+          <ScalarProperty Name="FCLANGUAGES" ColumnName="FCLANGUAGES" />
+          <ScalarProperty Name="FCRSTREET" ColumnName="FCRSTREET" />
+          <ScalarProperty Name="FCRDISTRICT" ColumnName="FCRDISTRICT" />
+          <ScalarProperty Name="FCRTOWN" ColumnName="FCRTOWN" />
+          <ScalarProperty Name="FCMSTREET" ColumnName="FCMSTREET" />
+          <ScalarProperty Name="FCMDISTRICT" ColumnName="FCMDISTRICT" />
+          <ScalarProperty Name="FCMTOWN" ColumnName="FCMTOWN" />
+          <ScalarProperty Name="FCTELEPHONE" ColumnName="FCTELEPHONE" />
+          <ScalarProperty Name="FCHSATTENDED" ColumnName="FCHSATTENDED" />
+          <ScalarProperty Name="FCLASTUSER" ColumnName="FCLASTUSER" />
+          <ScalarProperty Name="FDLASTUPDATE" ColumnName="FDLASTUPDATE" />
+          <ScalarProperty Name="FCPIN" ColumnName="FCPIN" />
+          <ScalarProperty Name="FCPRNTPIN" ColumnName="FCPRNTPIN" />
+          <ScalarProperty Name="FCACTVCODE" ColumnName="FCACTVCODE" />
+          <ScalarProperty Name="FNENTRYYEAR" ColumnName="FNENTRYYEAR" />
+          <ScalarProperty Name="FCCATEGORY" ColumnName="FCCATEGORY" />
+          <ScalarProperty Name="FCEMAIL" ColumnName="FCEMAIL" />
+          <ScalarProperty Name="fncurrentyear" ColumnName="fncurrentyear" />
+          <ScalarProperty Name="fcCurriculumID" ColumnName="fcCurriculumID" />
+          <ScalarProperty Name="fnStudTypeID" ColumnName="fnStudTypeID" />
+          <ScalarProperty Name="fnCategoryID" ColumnName="fnCategoryID" />
+          <ScalarProperty Name="FNAPPLICANTID" ColumnName="FNAPPLICANTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

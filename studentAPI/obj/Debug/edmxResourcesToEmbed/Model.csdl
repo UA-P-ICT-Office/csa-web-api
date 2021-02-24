@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AcademicsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="STUDENT">
+    <Key>
+      <PropertyRef Name="FNSTUDENTID" />
+    </Key>
+    <Property Name="FNSTUDENTID" Type="Decimal" Precision="6" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FCSTUDCODE" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FCSTUDTYPE" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FCLASTNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FCFIRSTNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FCMIDNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="FCSEX" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FNPROGRAMID" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="FNBATCHYEAR" Type="Decimal" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="FNSPCLID" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="FCNICKNAME" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="FCCITIZENSHIP" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FCCIVILSTATUS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FCBEGSTATUS" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FCACADSTATUS" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FDBIRTHDATE" Type="DateTime" Precision="3" />
+    <Property Name="FCBIRTHPLACE" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FCRELIGION" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FCLANGUAGES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCRSTREET" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCRDISTRICT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCRTOWN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCMSTREET" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCMDISTRICT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCMTOWN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCTELEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCHSATTENDED" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FCLASTUSER" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="FDLASTUPDATE" Type="DateTime" Precision="3" />
+    <Property Name="FCPIN" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="FCPRNTPIN" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="FCACTVCODE" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="FNENTRYYEAR" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="FCCATEGORY" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="FCEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fncurrentyear" Type="Int32" />
+    <Property Name="fcCurriculumID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fnStudTypeID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="fnCategoryID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FNAPPLICANTID" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="AcademicsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="STUDENTs" EntityType="Self.STUDENT" />
+  </EntityContainer>
+</Schema>

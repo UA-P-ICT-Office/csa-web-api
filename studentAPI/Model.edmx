@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AcademicsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="STUDENT">
+          <Key>
+            <PropertyRef Name="FNSTUDENTID" />
+          </Key>
+          <Property Name="FNSTUDENTID" Type="numeric" Precision="6" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FCSTUDCODE" Type="char" MaxLength="6" Nullable="false" />
+          <Property Name="FCSTUDTYPE" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="FCLASTNAME" Type="char" MaxLength="50" Nullable="false" />
+          <Property Name="FCFIRSTNAME" Type="char" MaxLength="50" Nullable="false" />
+          <Property Name="FCMIDNAME" Type="char" MaxLength="50" />
+          <Property Name="FCSEX" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="FNPROGRAMID" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="FNBATCHYEAR" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="FNSPCLID" Type="numeric" Precision="5" Scale="0" />
+          <Property Name="FCNICKNAME" Type="char" MaxLength="20" />
+          <Property Name="FCCITIZENSHIP" Type="char" MaxLength="35" Nullable="false" />
+          <Property Name="FCCIVILSTATUS" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="FCBEGSTATUS" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="FCACADSTATUS" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="FDBIRTHDATE" Type="datetime" />
+          <Property Name="FCBIRTHPLACE" Type="varchar" MaxLength="35" Nullable="false" />
+          <Property Name="FCRELIGION" Type="varchar" MaxLength="35" Nullable="false" />
+          <Property Name="FCLANGUAGES" Type="varchar" MaxLength="50" />
+          <Property Name="FCRSTREET" Type="varchar" MaxLength="50" />
+          <Property Name="FCRDISTRICT" Type="varchar" MaxLength="50" />
+          <Property Name="FCRTOWN" Type="varchar" MaxLength="50" />
+          <Property Name="FCMSTREET" Type="varchar" MaxLength="50" />
+          <Property Name="FCMDISTRICT" Type="varchar" MaxLength="50" />
+          <Property Name="FCMTOWN" Type="varchar" MaxLength="50" />
+          <Property Name="FCTELEPHONE" Type="varchar" MaxLength="50" />
+          <Property Name="FCHSATTENDED" Type="varchar" MaxLength="50" />
+          <Property Name="FCLASTUSER" Type="char" MaxLength="10" />
+          <Property Name="FDLASTUPDATE" Type="datetime" />
+          <Property Name="FCPIN" Type="char" MaxLength="4" />
+          <Property Name="FCPRNTPIN" Type="char" MaxLength="4" />
+          <Property Name="FCACTVCODE" Type="char" MaxLength="6" />
+          <Property Name="FNENTRYYEAR" Type="numeric" Precision="4" Scale="0" />
+          <Property Name="FCCATEGORY" Type="char" MaxLength="3" />
+          <Property Name="FCEMAIL" Type="varchar" MaxLength="50" />
+          <Property Name="fncurrentyear" Type="int" />
+          <Property Name="fcCurriculumID" Type="varchar" MaxLength="20" />
+          <Property Name="fnStudTypeID" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="fnCategoryID" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="FNAPPLICANTID" Type="int" />
+        </EntityType>
+        <EntityContainer Name="AcademicsModelStoreContainer">
+          <EntitySet Name="STUDENT" EntityType="Self.STUDENT" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AcademicsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="STUDENT">
+          <Key>
+            <PropertyRef Name="FNSTUDENTID" />
+          </Key>
+          <Property Name="FNSTUDENTID" Type="Decimal" Precision="6" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FCSTUDCODE" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FCSTUDTYPE" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FCLASTNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FCFIRSTNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FCMIDNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="FCSEX" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FNPROGRAMID" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="FNBATCHYEAR" Type="Decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="FNSPCLID" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="FCNICKNAME" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="FCCITIZENSHIP" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FCCIVILSTATUS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FCBEGSTATUS" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FCACADSTATUS" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FDBIRTHDATE" Type="DateTime" Precision="3" />
+          <Property Name="FCBIRTHPLACE" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FCRELIGION" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FCLANGUAGES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCRSTREET" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCRDISTRICT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCRTOWN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCMSTREET" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCMDISTRICT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCMTOWN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCTELEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCHSATTENDED" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FCLASTUSER" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="FDLASTUPDATE" Type="DateTime" Precision="3" />
+          <Property Name="FCPIN" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+          <Property Name="FCPRNTPIN" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+          <Property Name="FCACTVCODE" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+          <Property Name="FNENTRYYEAR" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="FCCATEGORY" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="FCEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fncurrentyear" Type="Int32" />
+          <Property Name="fcCurriculumID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fnStudTypeID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="fnCategoryID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FNAPPLICANTID" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="AcademicsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="STUDENTs" EntityType="Self.STUDENT" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AcademicsModelStoreContainer" CdmEntityContainer="AcademicsEntities">
+          <EntitySetMapping Name="STUDENTs">
+            <EntityTypeMapping TypeName="AcademicsModel.STUDENT">
+              <MappingFragment StoreEntitySet="STUDENT">
+                <ScalarProperty Name="FNSTUDENTID" ColumnName="FNSTUDENTID" />
+                <ScalarProperty Name="FCSTUDCODE" ColumnName="FCSTUDCODE" />
+                <ScalarProperty Name="FCSTUDTYPE" ColumnName="FCSTUDTYPE" />
+                <ScalarProperty Name="FCLASTNAME" ColumnName="FCLASTNAME" />
+                <ScalarProperty Name="FCFIRSTNAME" ColumnName="FCFIRSTNAME" />
+                <ScalarProperty Name="FCMIDNAME" ColumnName="FCMIDNAME" />
+                <ScalarProperty Name="FCSEX" ColumnName="FCSEX" />
+                <ScalarProperty Name="FNPROGRAMID" ColumnName="FNPROGRAMID" />
+                <ScalarProperty Name="FNBATCHYEAR" ColumnName="FNBATCHYEAR" />
+                <ScalarProperty Name="FNSPCLID" ColumnName="FNSPCLID" />
+                <ScalarProperty Name="FCNICKNAME" ColumnName="FCNICKNAME" />
+                <ScalarProperty Name="FCCITIZENSHIP" ColumnName="FCCITIZENSHIP" />
+                <ScalarProperty Name="FCCIVILSTATUS" ColumnName="FCCIVILSTATUS" />
+                <ScalarProperty Name="FCBEGSTATUS" ColumnName="FCBEGSTATUS" />
+                <ScalarProperty Name="FCACADSTATUS" ColumnName="FCACADSTATUS" />
+                <ScalarProperty Name="FDBIRTHDATE" ColumnName="FDBIRTHDATE" />
+                <ScalarProperty Name="FCBIRTHPLACE" ColumnName="FCBIRTHPLACE" />
+                <ScalarProperty Name="FCRELIGION" ColumnName="FCRELIGION" />
+                <ScalarProperty Name="FCLANGUAGES" ColumnName="FCLANGUAGES" />
+                <ScalarProperty Name="FCRSTREET" ColumnName="FCRSTREET" />
+                <ScalarProperty Name="FCRDISTRICT" ColumnName="FCRDISTRICT" />
+                <ScalarProperty Name="FCRTOWN" ColumnName="FCRTOWN" />
+                <ScalarProperty Name="FCMSTREET" ColumnName="FCMSTREET" />
+                <ScalarProperty Name="FCMDISTRICT" ColumnName="FCMDISTRICT" />
+                <ScalarProperty Name="FCMTOWN" ColumnName="FCMTOWN" />
+                <ScalarProperty Name="FCTELEPHONE" ColumnName="FCTELEPHONE" />
+                <ScalarProperty Name="FCHSATTENDED" ColumnName="FCHSATTENDED" />
+                <ScalarProperty Name="FCLASTUSER" ColumnName="FCLASTUSER" />
+                <ScalarProperty Name="FDLASTUPDATE" ColumnName="FDLASTUPDATE" />
+                <ScalarProperty Name="FCPIN" ColumnName="FCPIN" />
+                <ScalarProperty Name="FCPRNTPIN" ColumnName="FCPRNTPIN" />
+                <ScalarProperty Name="FCACTVCODE" ColumnName="FCACTVCODE" />
+                <ScalarProperty Name="FNENTRYYEAR" ColumnName="FNENTRYYEAR" />
+                <ScalarProperty Name="FCCATEGORY" ColumnName="FCCATEGORY" />
+                <ScalarProperty Name="FCEMAIL" ColumnName="FCEMAIL" />
+                <ScalarProperty Name="fncurrentyear" ColumnName="fncurrentyear" />
+                <ScalarProperty Name="fcCurriculumID" ColumnName="fcCurriculumID" />
+                <ScalarProperty Name="fnStudTypeID" ColumnName="fnStudTypeID" />
+                <ScalarProperty Name="fnCategoryID" ColumnName="fnCategoryID" />
+                <ScalarProperty Name="FNAPPLICANTID" ColumnName="FNAPPLICANTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

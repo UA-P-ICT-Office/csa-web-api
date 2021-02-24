@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AcademicsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="STUDENT">
+    <Key>
+      <PropertyRef Name="FNSTUDENTID" />
+    </Key>
+    <Property Name="FNSTUDENTID" Type="numeric" Precision="6" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FCSTUDCODE" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="FCSTUDTYPE" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FCLASTNAME" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="FCFIRSTNAME" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="FCMIDNAME" Type="char" MaxLength="50" />
+    <Property Name="FCSEX" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FNPROGRAMID" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="FNBATCHYEAR" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="FNSPCLID" Type="numeric" Precision="5" Scale="0" />
+    <Property Name="FCNICKNAME" Type="char" MaxLength="20" />
+    <Property Name="FCCITIZENSHIP" Type="char" MaxLength="35" Nullable="false" />
+    <Property Name="FCCIVILSTATUS" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FCBEGSTATUS" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="FCACADSTATUS" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="FDBIRTHDATE" Type="datetime" />
+    <Property Name="FCBIRTHPLACE" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="FCRELIGION" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="FCLANGUAGES" Type="varchar" MaxLength="50" />
+    <Property Name="FCRSTREET" Type="varchar" MaxLength="50" />
+    <Property Name="FCRDISTRICT" Type="varchar" MaxLength="50" />
+    <Property Name="FCRTOWN" Type="varchar" MaxLength="50" />
+    <Property Name="FCMSTREET" Type="varchar" MaxLength="50" />
+    <Property Name="FCMDISTRICT" Type="varchar" MaxLength="50" />
+    <Property Name="FCMTOWN" Type="varchar" MaxLength="50" />
+    <Property Name="FCTELEPHONE" Type="varchar" MaxLength="50" />
+    <Property Name="FCHSATTENDED" Type="varchar" MaxLength="50" />
+    <Property Name="FCLASTUSER" Type="char" MaxLength="10" />
+    <Property Name="FDLASTUPDATE" Type="datetime" />
+    <Property Name="FCPIN" Type="char" MaxLength="4" />
+    <Property Name="FCPRNTPIN" Type="char" MaxLength="4" />
+    <Property Name="FCACTVCODE" Type="char" MaxLength="6" />
+    <Property Name="FNENTRYYEAR" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="FCCATEGORY" Type="char" MaxLength="3" />
+    <Property Name="FCEMAIL" Type="varchar" MaxLength="50" />
+    <Property Name="fncurrentyear" Type="int" />
+    <Property Name="fcCurriculumID" Type="varchar" MaxLength="20" />
+    <Property Name="fnStudTypeID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="fnCategoryID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="FNAPPLICANTID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="AcademicsModelStoreContainer">
+    <EntitySet Name="STUDENT" EntityType="Self.STUDENT" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
